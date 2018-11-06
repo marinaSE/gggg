@@ -1,0 +1,14 @@
+firstNumber = int(input("Enter first number: "))
+secondNumber = int(input("Enter second number: "))
+
+numbers = range(firstNumber,secondNumber)
+
+for i in numbers:
+    if i % 3 == 0 and i % 5 == 0:
+        print ("Fizz Buzz")
+    elif i % 5 == 0:
+        print ("Buzz")
+    elif i % 3 == 0:
+        print ("Fizz")
+    else:
+        print(i)
