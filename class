@@ -1,0 +1,29 @@
+import random
+
+
+class Dish:
+   def __init__(self, name):
+       self.name = name
+   name_dish = 'bread'
+
+v = Dish('wine')
+
+def random_cook_time():
+   return random.randint(0, 100)
+
+def to_print():
+   print(unique_dish.ljust(20, '.'), random_time(), 'min')
+   pass
+
+dishes_string = v.name + ', ' + Dish.name_dish + ', spam, eggs,  tomato juice,,,, ham'
+# dishes_string = input('Make order please(separated by comma) \n')
+
+dish_list = []
+
+for dish in dishes_string.title().split(','):
+   dish_list.append(dish.strip())
+unique_dish_list = set(dish_list)
+
+for unique_dish in unique_dish_list:
+   if unique_dish != '':
+       to_print()
