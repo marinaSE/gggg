@@ -8,7 +8,7 @@ class Dish:
 
 v = Dish('wine')
 
-def random_cook_time():
+def random_time():
    return random.randint(0, 100)
 
 def to_print():
